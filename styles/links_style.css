@@ -78,7 +78,7 @@ a:hover {
 
 
 /* Image container styling */
-.fall {
+.leaf1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +91,7 @@ a:hover {
     transform: rotate(72deg); 
 }
 
-.fall3 {
+.leaf3 {
     margin-top: 20px;
     display: flex;
     justify-content: right;

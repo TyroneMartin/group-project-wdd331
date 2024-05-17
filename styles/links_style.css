@@ -1,0 +1,126 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #34495e;
+    text-align: center;
+}
+
+/* Section styling */
+section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+
+/* Image container styling */
+.fall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Image styling */
+.fallLeaf {
+    width: 100px; 
+    transform: rotate(72deg); 
+}
+
+.fall3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+    .fallLeaf {
+        width: 80px; 
+    }
+}

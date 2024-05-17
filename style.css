@@ -213,7 +213,7 @@ body {
 .sidebar * {
   background-color: white;
   color: #003300;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .page-wrapper {

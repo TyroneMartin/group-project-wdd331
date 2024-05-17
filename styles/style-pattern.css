@@ -5,7 +5,7 @@ h4 {
   margin: 0;
 }
 
-h1 {
+h1, .H1Tag {
   background: #ce7604;
   color: #fff;
   display: inline-block;
@@ -13,14 +13,21 @@ h1 {
   margin-bottom: 1em;
   padding: 0.5em 1em;
 }
-
+.h1Tag {
+  font-size: 6em;
+  /* margin: 0.5em 0 0.25em 0; */
+}
 h2 {
   color: #fff;
   font-weight: 900;
   /* Heavy */
-  font-size: 6em;
+  font-size: 4em;
   letter-spacing: 1px;
   line-height: 1em;
+}
+
+.h2Tag {
+ color: #fff;
 }
 
 h3 {
@@ -51,7 +58,7 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  color:rgb(2 10 16);
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
@@ -72,7 +79,7 @@ html {
 body {
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 85%;
-  color: #333;
+  color: #000000;
   background-color: #4B8077;
   margin: 0;
   padding: 1em;
@@ -120,7 +127,7 @@ section {
 }
 
 .text-dark {
-  background-color: black;
+  background-color: #000000;
 }
 
 .element {

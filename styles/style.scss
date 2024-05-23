@@ -15,7 +15,7 @@ $colorFooterBackground: #003300;
 $colorFooterText: #ffffff;
 $colorBodyBackground: rgba(4, 95, 73, 0.85);
 
-$backgroundImage: url("./image/garden.jpg");
+$backgroundImage: url("../image/garden.jpg");
 
 // Mixins
 @mixin grow-animation($duration: 2s) {
@@ -173,7 +173,7 @@ a {
   position: relative; // Adjusted for the position of the falling leaves gif
 
   &::after {
-    content: url('./image/fallleaves.gif');
+    content: url('../image/fallleaves.gif');
     position: absolute;
     bottom: -20px;
     right: 0;

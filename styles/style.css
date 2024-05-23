@@ -130,7 +130,7 @@ a::after {
   position: relative;
 }
 .summary::after {
-  content: url("./image/fallleaves.gif");
+  content: url("../image/fallleaves.gif");
   position: absolute;
   bottom: -20px;
   right: 0;
@@ -179,7 +179,7 @@ a::after {
 }
 
 html {
-  background-image: url("./image/garden.jpg");
+  background-image: url("../image/garden.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

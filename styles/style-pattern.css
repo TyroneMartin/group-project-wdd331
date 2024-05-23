@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
   background-color: #2F4858;
-  padding: 5%; }
+  padding: 5%;
+}
 
 body {
   font-family: "Quattrocento Sans", sans-serif;
@@ -12,11 +14,13 @@ body {
   color: #000000;
   background-color: #4B8077;
   margin: 0;
-  padding: 1em; }
+  padding: 1em;
+}
 
 h2, h3, h4 {
   font-family: Verdana, "Lobster", "cursive", sans-serif;
-  margin: 0; }
+  margin: 0;
+}
 
 h1, .H1Tag {
   background: #ce7604;
@@ -24,105 +28,132 @@ h1, .H1Tag {
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
-  padding: 0.5em 1em; }
+  padding: 0.5em 1em;
+}
 
 .h1Tag {
-  font-size: 6em; }
+  font-size: 6em;
+}
 
 h2 {
   color: #fff;
   font-weight: 900;
   font-size: 4em;
   letter-spacing: 1px;
-  line-height: 1em; }
+  line-height: 1em;
+}
 
 .h2Tag {
-  color: #fff; }
+  color: #fff;
+}
 
 .h3Tag {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 h3 {
   font-size: 2.25em;
   font-weight: 200;
   letter-spacing: 1px;
   line-height: 1em;
-  padding: 0.5em 0 0.25em 0; }
+  padding: 0.5em 0 0.25em 0;
+}
 
 h4 {
   font-size: 1.5em;
   font-weight: 200;
   letter-spacing: 1px;
   line-height: 1em;
-  margin: 0.5em 0; }
+  margin: 0.5em 0;
+}
 
 p {
   font-family: verdana, arial, sans-serif;
   font-size: 1.5em;
   line-height: 1.5em;
   padding: 0.5em 0;
-  margin: 0; }
+  margin: 0;
+}
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #000000;
   text-decoration: none;
-  transition: border-color 0.2s ease-in-out; }
-  a:hover {
-    border-color: #ea2e49; }
+  transition: border-color 0.2s ease-in-out;
+}
+a:hover {
+  border-color: #ea2e49;
+}
 
 section {
   background-color: white;
   padding: 1em;
-  margin: 1em; }
-  section.colors {
-    display: flex;
-    flex-flow: row wrap; }
-    section.colors > h3 {
-      width: 100%;
-      flex: 1 0 100%; }
-    section.colors > figure {
-      margin: 0;
-      flex: 1 1 25%; }
-      section.colors > figure .text-dark {
-        background-color: #000000; }
-      section.colors > figure .swatch {
-        width: 100%;
-        height: 100px;
-        border: 1px solid; }
-      section.colors > figure:nth-child(5) .swatch {
-        background-color: #000000; }
-      section.colors > figure:nth-child(4) .swatch {
-        background-color: #61120A; }
-      section.colors > figure:nth-child(3) .swatch {
-        background-color: #003300; }
-      section.colors > figure:nth-child(2) .swatch {
-        background-color: #00705C; }
-      section.colors > figure:nth-child(1) .swatch {
-        background-color: #CE7604; }
-  section.elements .element {
-    border: 1px solid;
-    margin: 0.5em;
-    padding: 1em; }
-    section.elements .element.accent1 {
-      background-color: #CE7604; }
-      section.elements .element.accent1 h4 {
-        color: #fff; }
-    section.elements .element.accent3 {
-      background-color: #003300; }
-      section.elements .element.accent3 h4 {
-        color: #fff; }
-    section.elements .element p.uppercase {
-      font-weight: 300;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #333; }
-    section.elements .element p.uppercase-light {
-      font-weight: 300;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #fff; }
-      section.elements .element p.uppercase-light.accent4 {
-        background-color: #61120A; }
-
-/*# sourceMappingURL=style-pattern.css.map */
+  margin: 1em;
+}
+section.colors {
+  display: flex;
+  flex-flow: row wrap;
+}
+section.colors > h3 {
+  width: 100%;
+  flex: 1 0 100%;
+}
+section.colors > figure {
+  margin: 0;
+  flex: 1 1 25%;
+}
+section.colors > figure .text-dark {
+  background-color: #000000;
+}
+section.colors > figure .swatch {
+  width: 100%;
+  height: 100px;
+  border: 1px solid;
+}
+section.colors > figure:nth-child(5) .swatch {
+  background-color: #000000;
+}
+section.colors > figure:nth-child(4) .swatch {
+  background-color: #61120A;
+}
+section.colors > figure:nth-child(3) .swatch {
+  background-color: #003300;
+}
+section.colors > figure:nth-child(2) .swatch {
+  background-color: #00705C;
+}
+section.colors > figure:nth-child(1) .swatch {
+  background-color: #CE7604;
+}
+section.elements .element {
+  border: 1px solid;
+  margin: 0.5em;
+  padding: 1em;
+}
+section.elements .element.accent1 {
+  background-color: #CE7604;
+}
+section.elements .element.accent1 h4 {
+  color: #fff;
+}
+section.elements .element.accent3 {
+  background-color: #003300;
+}
+section.elements .element.accent3 h4 {
+  color: #fff;
+}
+section.elements .element p.uppercase {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333;
+}
+section.elements .element p.uppercase-light {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+section.elements .element p.uppercase-light.accent4 {
+  background-color: #61120A;
+}/*# sourceMappingURL=style-pattern.css.map */

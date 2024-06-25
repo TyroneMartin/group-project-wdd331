@@ -253,7 +253,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   header {
     display: flex;
     flex-direction: column;

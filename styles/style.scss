@@ -1,7 +1,6 @@
 // Variables
-$fontQuattrocento: 'Quattrocento Sans', sans-serif;
-$fontPacifico: 'Pacifico', cursive;
-$fontLobster: 'Lobster', cursive;
+$fontDancingScript: 'Dancing Script', sans-serif;
+$fontRobotoCondensed: 'Roboto Condensed', cursive;
 
 $colorPrimary: #ce7604;
 $colorSecondary: #61120A;
@@ -75,11 +74,11 @@ $backgroundImage: url("../image/garden.jpg");
 
 // Styles
 h1:contains("The Beauty of CSS Design") {
-  font-family: $fontPacifico;
+  font-family: $fontDancingScript;
 }
 
 h2, h3, h4 {
-  font-family: $fontLobster;
+  font-family: $fontDancingScript;
   margin: 5px;
   border-bottom: solid 2px transparent;
   border-radius: 2%;
@@ -140,7 +139,7 @@ h3 {
 }
 
 h4 {
-  font-family: $fontQuattrocento;
+  font-family: $fontDancingScript;
   font-size: 1.5em;
   font-weight: 200;
   letter-spacing: 1px;
@@ -149,7 +148,7 @@ h4 {
 }
 
 p {
-  font-family: $fontQuattrocento;
+  font-family: $fontRobotoCondensed;
   font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
@@ -234,7 +233,7 @@ html {
 }
 
 body {
-  font-family: $fontQuattrocento;
+  font-family: $fontRobotoCondensed;
   font-size: 85%;
   color: $colorWhite;
   background-color: $colorBodyBackground;

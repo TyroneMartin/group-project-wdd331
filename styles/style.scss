@@ -228,7 +228,7 @@ html {
   background-attachment: fixed;
   padding: 5%;
   background-color: transparent;
-  max-width: 900px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -242,7 +242,7 @@ body {
 
 .sidebar {
   position: fixed;
-  top: 50%;
+  top: 75%;
   right: 20px;
   transform: translateY(-50%);
   background-color: $colorSidebarBackground;
@@ -301,21 +301,72 @@ footer {
   }
 }
 
-// Adjustments for smaller screens
-@media only screen and (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
+
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1051px) {
+
+  h2:first-of-type {
+    font-size: 30px;
+}
 
   .sidebar {
-    margin-top: 60px;
-    position: relative;
+    top: 62%;
   }
 
-  footer {
-    display: block;
-    margin-top: 20px;
-  }
+}
+
+// Mobile view 
+@media only screen and (max-width: 769px) {
+  h2:first-of-type {
+    font-size: 20px;
+}
+
+.summary::after {
+  display: none;
+}
+
+.page-wrapper {
+  padding: 0;
+
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  // position: relative;
+  // top: 0;
+  // right: 0;
+  // transform: none;
+  // margin-bottom: 20px;
+  // padding: 20px;
+  display: none;
+}
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1500px) {
+//   h2:first-of-type {
+//     font-size: 2rem;
+// }
+
+p:first-of-type{
+  width: 70%;
+}
+p {
+  width: 80%;
+  font-size: 2em;
+}
+
+.sidebar {
+  top: 40%;
+  right: 20px; 
+}
+
+
 }

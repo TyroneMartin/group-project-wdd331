@@ -16,6 +16,11 @@ $colorBodyBackground: rgba(4, 95, 73, 0.85);
 
 $backgroundImage: url("../image/garden.jpg");
 
+// adding SVG
+$svg-filter: "url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\"><defs><filter id=\"dropshadow\" height=\"130%\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"2\"/><feOffset dx=\"1\" dy=\"1\" result=\"offsetblur\"/><feMerge><feMergeNode/><feMergeNode in=\"SourceGraphic\"/></feMerge></filter></defs></svg>#dropshadow')";
+
+
+
 // Mixins
 @mixin grow-animation($duration: 2s) {
   animation: grow-animation $duration ease-in-out infinite alternate;
@@ -120,6 +125,7 @@ h1 {
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  filter: #{$svg-filter};//added SVG
 }
 
 h2 {
@@ -240,13 +246,14 @@ body {
   padding: 5px;
 }
 
+//making some changes on the side bar
 .sidebar {
-  position: absolute;
-  top: 75%;
-  right: 20px;
+  position: fixed;
+  top: 50%;
+  right: 40px; 
   transform: translateY(-50%);
   background-color: $colorSidebarBackground;
-  padding: 10px;
+  padding: 10px ; 
   padding-bottom: 30px;
   padding-right: 20px;
   border: 1px solid $colorSidebarBorder;
@@ -254,13 +261,41 @@ body {
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  filter: #{$svg-filter};//added SVG
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    left: -12px;
+    top: -12px;
+    background-color: white;
+    z-index: -1;
+    border-radius: 15px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    left: -20px;
+    top: -20px;
+    background-color: $colorSidebarBackground;
+    z-index: -2;
+    border-radius: 15px;
+  }
 
   * {
     background-color: white;
     color: $colorSidebarText;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
   }
 }
+
 
 .page-wrapper {
   padding: 5%;

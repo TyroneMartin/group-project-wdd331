@@ -6,7 +6,7 @@
 }
 
 html {
-  background-color: #2F4858;
+  background-color: #69130B;
   padding: 5%;
 }
 
@@ -14,7 +14,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 85%;
   color: #000000;
-  background-color: #4B8077;
+  background-color: #285743;
   margin: 0;
   padding: 1em;
 }
@@ -25,7 +25,7 @@ h2, h3, h4 {
 }
 
 h1, .H1Tag {
-  background: #ce7604;
+  background: #C27A2C;
   color: #fff;
   display: inline-block;
   font-weight: normal;
@@ -113,19 +113,19 @@ section.colors > figure .swatch {
   border: 1px solid;
 }
 section.colors > figure:nth-child(5) .swatch {
-  background-color: #000000;
+  background-color: #F6F7F6;
 }
 section.colors > figure:nth-child(4) .swatch {
-  background-color: #61120A;
+  background-color: #69130B;
 }
 section.colors > figure:nth-child(3) .swatch {
-  background-color: #003300;
+  background-color: #C27A2C;
 }
 section.colors > figure:nth-child(2) .swatch {
-  background-color: #00705C;
+  background-color: #285743;
 }
 section.colors > figure:nth-child(1) .swatch {
-  background-color: #CE7604;
+  background-color: #C27A2C;
 }
 section.elements .element {
   border: 1px solid;
@@ -133,13 +133,13 @@ section.elements .element {
   padding: 1em;
 }
 section.elements .element.accent1 {
-  background-color: #CE7604;
+  background-color: #C27A2C;
 }
 section.elements .element.accent1 h4 {
   color: #fff;
 }
 section.elements .element.accent3 {
-  background-color: #003300;
+  background-color: #285743;
 }
 section.elements .element.accent3 h4 {
   color: #fff;
@@ -157,5 +157,5 @@ section.elements .element p.uppercase-light {
   color: #fff;
 }
 section.elements .element p.uppercase-light.accent4 {
-  background-color: #61120A;
+  background-color: #69130B;
 }/*# sourceMappingURL=style-pattern.css.map */

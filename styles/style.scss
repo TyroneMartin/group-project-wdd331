@@ -341,113 +341,151 @@ footer {
 }
 
 
+// @media only screen and (min-width: 1000px) and (max-width: 1051px) {
+
+//   h2:first-of-type {
+//     font-size: 30px;
+// }
+
+//   .sidebar {
+//     top: 62%;
+//   }
+
+// }
 
 
-
-@media only screen and (min-width: 1000px) and (max-width: 1051px) {
-
-  h2:first-of-type {
-    font-size: 30px;
-}
-
-  .sidebar {
-    top: 62%;
-  }
-
-}
-
-// Mobile view 
-@media only screen and (max-width: 769px) {
-  h2:first-of-type {
-    font-size: 20px;
-}
-
-.summary::after {
-  display: none;
-}
-
-.page-wrapper {
-  padding: 0;
-
-}
-
-.preamble, .explanation, .participation, .benefits, .requirements {
-  max-width: 100%;
-  height: auto;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.sidebar {
-  // position: relative;
-  // top: 0;
-  // right: 0;
-  // transform: none;
-  // margin-bottom: 20px;
-  // padding: 20px;
-  display: none;
-}
-}
-
-@media only screen and (min-width: 1050px) and (max-width: 1500px) {
-p:first-of-type{
-  width: 70%;
-}
-p {
-  width: 80%;
-  font-size: 2em;
-}
-
-.sidebar {
-  top: 40%;
-  right: 20px; 
-}
-}
-
-// mobile view
-@media only screen and (min-width: 769px){
-
-  .sidebar {
-    transform: none;
-    margin-bottom: 20px;
-    padding: 20px;
-    top: 4%;
-    left:75%;
-
-    
-  }
-
+/* For medium views (tablets, etc.) */
+@media screen and (max-width: 1024px) {
+  // Adjust body padding
   body {
-    padding: 0;
-    // font-size: 60%;
-    margin-left: -15px;
+    padding: 10px;
   }
 
-  .page-wrapper {
-    width: 80%;
-    margin-right: 15px;
-  } 
+  // Adjust font sizes for headers
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.75em;
+  }
 
-  h2:first-of-type {
-    font-size: 20px;
+  h2 {
+    font-size: 2.75em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  // Adjust padding and margin for sections
+  .preamble, .explanation, .participation, .benefits, .requirements {
+    margin-right: 0;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  // Adjust sidebar position
+  .sidebar {
+    position: static;
+    transform: none;
+    margin-top: 25px;
+    background-color: $colorSidebarBackground;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .design-selection, .design-archives, .zen-resources {
+    margin-bottom: 25px;
+  }
 }
 
-.summary{
-margin-left: left;
-position: unset;
+/* For small views (small tablets, large phones) */
+@media screen and (max-width: 772px) {
+  // Adjust html padding
+  html {
+    padding: 2%;
+  }
+
+  // Adjust body font size
+  body {
+    font-size: 100%;
+    padding: 2px;
+  }
+
+  // Adjust font sizes for headers
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+  // Adjust padding and margin for sections
+  .preamble, .explanation, .participation, .benefits, .requirements {
+    margin-right: 0;
+    max-width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  // Adjust sidebar position
+  .sidebar {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    background-color: $colorSidebarBackground;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .design-selection, .design-archives, .zen-resources {
+    margin-bottom: 20px;
+  }
+}
+
+/* For smaller views (phones, etc.) */
+@media screen and (max-width: 480px) {
+  // Adjust font sizes for headers
+  h1 {
+    font-size: 1.75em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  // Adjust sidebar padding
+  .sidebar {
+    padding: 5px;
+  }
+
+  // Adjust section padding and margin
+  .preamble, .explanation, .participation, .benefits, .requirements {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
 }
 
 
-.preamble, .explanation, .participation, .benefits, .requirements {
-  max-width: calc(100% - 175px);
-}
 
-#css-zen-garden {
- margin-left: 0;
-}
-
-html {
-  margin-right: 20%;
-}
-
-}

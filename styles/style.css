@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 h1:contains("The Beauty of CSS Design") {
   font-family: "Dancing Script", sans-serif; }
 
@@ -10,7 +8,6 @@ h2, h3, h4 {
   border-radius: 2%;
   position: relative;
   padding-bottom: 10px; }
-
   h2::after, h3::after, h4::after {
     content: "";
     position: absolute;
@@ -22,13 +19,11 @@ h2, h3, h4 {
     pointer-events: none;
     z-index: 1;
     animation: grow-animation 2s ease-in-out infinite alternate; }
-
 @keyframes grow-animation {
   0% {
     height: 0; }
   100% {
     height: 100%; } }
-
 h3::after, h4::after {
   content: "";
   position: absolute;
@@ -50,7 +45,8 @@ h1 {
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
-  padding: 0.5em 1em; }
+  padding: 0.5em 1em;
+  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="dropshadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="2"/><feOffset dx="1" dy="1" result="offsetblur"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>#dropshadow'); }
 
 h2 {
   color: #fff;
@@ -60,7 +56,7 @@ h2 {
   line-height: 1em; }
 
 h3 {
-  font-size: 2.5em;
+  font-size: 2.25em;
   font-weight: 200;
   letter-spacing: 1px;
   line-height: 1em;
@@ -68,7 +64,7 @@ h3 {
 
 h4 {
   font-family: "Dancing Script", sans-serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 200;
   letter-spacing: 1px;
   line-height: 1em;
@@ -76,7 +72,7 @@ h4 {
 
 p {
   font-family: "Roboto Condensed", cursive;
-  font-size: 1.3em;
+  font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
   margin: 0; }
@@ -86,7 +82,6 @@ a {
   color: #fff;
   font-weight: 700;
   position: relative; }
-
   a::before, a::after {
     content: '';
     position: absolute;
@@ -97,14 +92,11 @@ a {
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out; }
-
   a:hover::before, a:hover::after {
     visibility: visible;
     transform: scaleX(1); }
-
   a::before {
     background-color: #d97f25; }
-
   a::after {
     background-color: #17cba7; }
 
@@ -115,7 +107,6 @@ a {
   color: #fff;
   padding: 5% 0;
   position: relative; }
-
   .summary::after {
     content: url("../image/fallleaves.gif");
     position: absolute;
@@ -165,7 +156,7 @@ html {
   background-attachment: fixed;
   padding: 5%;
   background-color: transparent;
-  max-width: 1500px;
+  max-width: 1030px;
   margin: 0 auto; }
 
 body {
@@ -189,39 +180,33 @@ body {
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="dropshadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="2"/><feOffset dx="1" dy="1" result="offsetblur"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>#dropshadow');
-}
-.sidebar::after {
-  content: '';
-  position: absolute;
-  bottom: -12px;
-  right: -12px;
-  left: -12px;
-  top: -12px;
-  background-color: white;
-  z-index: -1;
-  border-radius: 15px;
-}
-
-.sidebar::before {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  left: -20px;
-  top: -20px;
-  background-color: #ce7604;
-  z-index: -2;
-  border-radius: 15px;
-}
-
-.sidebar * {
-  background-color: white;
-  color: #003300;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
-}
+  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="dropshadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="2"/><feOffset dx="1" dy="1" result="offsetblur"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>#dropshadow'); }
+  .sidebar::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    left: -12px;
+    top: -12px;
+    background-color: white;
+    z-index: -1;
+    border-radius: 15px; }
+  .sidebar::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    left: -20px;
+    top: -20px;
+    background-color: #ce7604;
+    z-index: -2;
+    border-radius: 15px; }
+  .sidebar * {
+    background-color: white;
+    color: #003300;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; }
 
 .page-wrapper {
   padding: 5%; }
@@ -239,7 +224,9 @@ ul li {
   margin-top: 5%; }
 
 p {
-  width: 80%; }
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2em; }
 
 footer {
   background-color: #003300;
@@ -288,5 +275,36 @@ footer {
   .sidebar {
     top: 40%;
     right: 20px; } }
+@media only screen and (min-width: 769px) {
+  .sidebar {
+    transform: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    top: 4%;
+    left: 75%; }
+
+  body {
+    padding: 0;
+    margin-left: -15px; }
+
+  .page-wrapper {
+    width: 80%;
+    margin-right: 15px; }
+
+  h2:first-of-type {
+    font-size: 20px; }
+
+  .summary {
+    margin-left: left;
+    position: unset; }
+
+  .preamble, .explanation, .participation, .benefits, .requirements {
+    max-width: calc(100% - 175px); }
+
+  #css-zen-garden {
+    margin-left: 0; }
+
+  html {
+    margin-right: 20%; } }
 
 /*# sourceMappingURL=style.css.map */

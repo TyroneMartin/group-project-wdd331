@@ -234,8 +234,9 @@ html {
   background-attachment: fixed;
   padding: 5%;
   background-color: transparent;
-  max-width: 1500px;
+  max-width: 1030px;
   margin: 0 auto;
+
 }
 
 body {
@@ -244,6 +245,7 @@ body {
   color: $colorWhite;
   background-color: $colorBodyBackground;
   padding: 5px;
+
 }
 
 //making some changes on the side bar
@@ -317,6 +319,8 @@ ul li {
 
 p {
   width: 80%;
+  margin: 0 auto;
+  line-height: 2em;
 }
 
 footer {
@@ -386,10 +390,6 @@ footer {
 }
 
 @media only screen and (min-width: 1050px) and (max-width: 1500px) {
-//   h2:first-of-type {
-//     font-size: 2rem;
-// }
-
 p:first-of-type{
   width: 70%;
 }
@@ -402,6 +402,52 @@ p {
   top: 40%;
   right: 20px; 
 }
+}
 
+// mobile view
+@media only screen and (min-width: 769px){
+
+  .sidebar {
+    transform: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    top: 4%;
+    left:75%;
+
+    
+  }
+
+  body {
+    padding: 0;
+    // font-size: 60%;
+    margin-left: -15px;
+  }
+
+  .page-wrapper {
+    width: 80%;
+    margin-right: 15px;
+  } 
+
+  h2:first-of-type {
+    font-size: 20px;
+}
+
+.summary{
+margin-left: left;
+position: unset;
+}
+
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+  max-width: calc(100% - 175px);
+}
+
+#css-zen-garden {
+ margin-left: 0;
+}
+
+html {
+  margin-right: 20%;
+}
 
 }

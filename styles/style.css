@@ -58,6 +58,7 @@ h1 {
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="dropshadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="2"/><feOffset dx="1" dy="1" result="offsetblur"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>#dropshadow');
 }
 
 h2 {

@@ -13,6 +13,10 @@ $colorBodyBackground: rgba(4, 95, 73, 0.85);
 
 $backgroundImage: url("../image/garden.jpg");
 
+// adding SVG
+$svg-filter: "url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\"><defs><filter id=\"dropshadow\" height=\"130%\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"2\"/><feOffset dx=\"1\" dy=\"1\" result=\"offsetblur\"/><feMerge><feMergeNode/><feMergeNode in=\"SourceGraphic\"/></feMerge></filter></defs></svg>#dropshadow')";
+
+
 // Mixins
 @mixin grow-animation($duration: 2s) {
   animation: grow-animation $duration ease-in-out infinite alternate;
@@ -72,7 +76,9 @@ $backgroundImage: url("../image/garden.jpg");
 // Styles
 h1:contains("The Beauty of CSS Design") {
   font-family: 'Dancing Script', sans-serif;
-}
+  }
+
+
 
 h2, h3, h4 {
   font-family: 'Dancing Script', sans-serif;
@@ -117,6 +123,7 @@ h1 {
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  filter: #{$svg-filter};//added SVG
 }
 
 h2 {

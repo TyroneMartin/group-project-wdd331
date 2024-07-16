@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 h1:contains("The Beauty of CSS Design") {
-  font-family: "Dancing Script", sans-serif; }
+  font-family: "Dancing Script", cursive !important; }
 
 h2, h3, h4 {
-  font-family: "Dancing Script", sans-serif;
+  font-family: "Dancing Script", cursive !important;
   margin: 5px;
   border-bottom: solid 2px transparent;
   border-radius: 2%;
   position: relative;
   padding-bottom: 10px; }
-
   h2::after, h3::after, h4::after {
     content: "";
     position: absolute;
@@ -22,13 +19,11 @@ h2, h3, h4 {
     pointer-events: none;
     z-index: 1;
     animation: grow-animation 2s ease-in-out infinite alternate; }
-
 @keyframes grow-animation {
   0% {
     height: 0; }
   100% {
     height: 100%; } }
-
 h3::after, h4::after {
   content: "";
   position: absolute;
@@ -50,7 +45,8 @@ h1 {
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
-  padding: 0.5em 1em; }
+  padding: 0.5em 1em;
+  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="dropshadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="2"/><feOffset dx="1" dy="1" result="offsetblur"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>#dropshadow'); }
 
 h2 {
   color: #fff;
@@ -60,23 +56,23 @@ h2 {
   line-height: 1em; }
 
 h3 {
-  font-size: 2.5em;
+  font-size: 2.25em;
   font-weight: 200;
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0; }
 
 h4 {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 1.25em;
+  font-family: "Dancing Script", cursive !important;
+  font-size: 2em;
   font-weight: 200;
   letter-spacing: 1px;
   line-height: 1em;
   margin: 0.5em 0; }
 
 p {
-  font-family: "Roboto Condensed", cursive;
-  font-size: 1.3em;
+  font-family: "Roboto Condensed", san serif !important;
+  font-size: 1.5em;
   line-height: 1.5em;
   padding: 0.5em 0;
   margin: 0; }
@@ -86,7 +82,6 @@ a {
   color: #fff;
   font-weight: 700;
   position: relative; }
-
   a::before, a::after {
     content: '';
     position: absolute;
@@ -97,14 +92,11 @@ a {
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out; }
-
   a:hover::before, a:hover::after {
     visibility: visible;
     transform: scaleX(1); }
-
   a::before {
     background-color: #d97f25; }
-
   a::after {
     background-color: #17cba7; }
 
@@ -115,7 +107,6 @@ a {
   color: #fff;
   padding: 5% 0;
   position: relative; }
-
   .summary::after {
     content: url("../image/fallleaves.gif");
     position: absolute;
@@ -165,11 +156,11 @@ html {
   background-attachment: fixed;
   padding: 5%;
   background-color: transparent;
-  max-width: 1500px;
+  max-width: 1030px;
   margin: 0 auto; }
 
 body {
-  font-family: "Roboto Condensed", cursive;
+  font-family: "Roboto Condensed", sans serif !important;
   font-size: 85%;
   color: #fff;
   background-color: rgba(4, 95, 73, 0.85);
@@ -189,39 +180,33 @@ body {
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="dropshadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="2"/><feOffset dx="1" dy="1" result="offsetblur"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>#dropshadow');
-}
-.sidebar::after {
-  content: '';
-  position: absolute;
-  bottom: -12px;
-  right: -12px;
-  left: -12px;
-  top: -12px;
-  background-color: white;
-  z-index: -1;
-  border-radius: 15px;
-}
-
-.sidebar::before {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  left: -20px;
-  top: -20px;
-  background-color: #ce7604;
-  z-index: -2;
-  border-radius: 15px;
-}
-
-.sidebar * {
-  background-color: white;
-  color: #003300;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
-}
+  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="dropshadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="2"/><feOffset dx="1" dy="1" result="offsetblur"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>#dropshadow'); }
+  .sidebar::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    left: -12px;
+    top: -12px;
+    background-color: white;
+    z-index: -1;
+    border-radius: 15px; }
+  .sidebar::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    left: -20px;
+    top: -20px;
+    background-color: #ce7604;
+    z-index: -2;
+    border-radius: 15px; }
+  .sidebar * {
+    background-color: white;
+    color: #003300;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; }
 
 .page-wrapper {
   padding: 5%; }
@@ -239,7 +224,9 @@ ul li {
   margin-top: 5%; }
 
 p {
-  width: 80%; }
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2em; }
 
 footer {
   background-color: #003300;
@@ -253,192 +240,94 @@ footer {
     footer a:hover {
       text-decoration: underline; }
 
-/* @media only screen and (min-width: 1000px) and (max-width: 1051px) {
-  h2:first-of-type {
-    font-size: 30px; }
-
-  .sidebar {
-    top: 62%; } }
-@media only screen and (max-width: 769px) {
-  h2:first-of-type {
-    font-size: 20px; }
-
-  .summary::after {
-    display: none; }
-
-  .page-wrapper {
-    padding: 0; }
-
-  .preamble, .explanation, .participation, .benefits, .requirements {
-    max-width: 100%;
-    height: auto;
-    padding: 20px;
-    margin-bottom: 20px; }
-
-  .sidebar {
-    display: none; } }
-@media only screen and (min-width: 1050px) and (max-width: 1500px) {
-  p:first-of-type {
-    width: 70%; }
-
-  p {
-    width: 80%;
-    font-size: 2em; }
-
-  .sidebar {
-    top: 40%;
-    right: 20px; } } */
-
-
-  /* For medium views (tablets, etc.) */
+/* For medium views (tablets, etc.) */
 @media screen and (max-width: 1024px) {
-  /* Adjust body padding */
   body {
-    padding: 10px;
-  }
+    padding: 10px; }
 
-  /* Adjust font sizes for headers */
   h1 {
     font-size: 2.5em;
-    margin-bottom: 0.75em;
-  }
+    margin-bottom: 0.75em; }
 
   h2 {
-    font-size: 2.75em;
-  }
+    font-size: 2.75em; }
 
   h3 {
-    font-size: 2em;
-  }
+    font-size: 2em; }
 
   h4 {
-    font-size: 1.5em;
-  }
+    font-size: 1.5em; }
 
-  /* Adjust padding and margin for sections */
-  .preamble,
-  .explanation,
-  .participation,
-  .benefits,
-  .requirements {
+  .preamble, .explanation, .participation, .benefits, .requirements {
     margin-right: 0;
     max-width: 100%;
     padding: 20px;
-    margin-bottom: 25px;
-  }
+    margin-bottom: 25px; }
 
-  /* Adjust sidebar position */
   .sidebar {
     position: static;
     transform: none;
     margin-top: 25px;
-    background-color: #ce7604; 
+    background-color: #ce7604;
     padding: 15px;
-    border-radius: 10px;
-  }
+    border-radius: 10px; }
 
-  .design-selection,
-  .design-archives,
-  .zen-resources {
-    margin-bottom: 25px;
-  }
-}
-
+  .design-selection, .design-archives, .zen-resources {
+    margin-bottom: 25px; } }
 /* For small views (small tablets, large phones) */
 @media screen and (max-width: 772px) {
-  /* Adjust html padding */
   html {
-    padding: 2%;
-  }
+    padding: 2%; }
 
-  /* Adjust body font size */
   body {
     font-size: 100%;
-    padding: 2px;
-  }
+    padding: 2px; }
 
-  /* Adjust font sizes for headers */
   h1 {
     font-size: 2em;
-    margin-bottom: 0.5em;
-  }
+    margin-bottom: 0.5em; }
 
   h2 {
-    font-size: 2.5em;
-  }
+    font-size: 2.5em; }
 
   h3 {
-    font-size: 1.75em;
-  }
+    font-size: 1.75em; }
 
   h4 {
-    font-size: 1.25em;
-  }
+    font-size: 1.25em; }
 
-  /* Adjust padding and margin for sections */
-  .preamble,
-  .explanation,
-  .participation,
-  .benefits,
-  .requirements {
+  .preamble, .explanation, .participation, .benefits, .requirements {
     margin-right: 0;
     max-width: 100%;
     padding: 15px;
-    margin-bottom: 20px;
-  }
+    margin-bottom: 20px; }
 
-  /* Adjust sidebar position */
   .sidebar {
     position: static;
     transform: none;
     margin-top: 20px;
-    background-color: #ce7604; 
-    border-radius: 10px;
-  }
+    background-color: #ce7604;
+    padding: 10px;
+    border-radius: 10px; }
 
-  .design-selection,
-  .design-archives,
-  .zen-resources {
-    margin-bottom: 20px;
-  }
-}
-
+  .design-selection, .design-archives, .zen-resources {
+    margin-bottom: 20px; } }
 /* For smaller views (phones, etc.) */
 @media screen and (max-width: 480px) {
-  /* Adjust font sizes for headers */
   h1 {
-    font-size: 1.75em;
-  }
+    font-size: 1.75em; }
 
   h2 {
-    font-size: 2em;
-  }
+    font-size: 2em; }
 
   h3 {
-    font-size: 1.5em;
-  }
+    font-size: 1.5em; }
 
   h4 {
-    font-size: 1em;
-  }
+    font-size: 1em; }
 
-  /* Adjust sidebar padding */
   .sidebar {
-    padding: 5px;
-  }
-
-  /* Adjust section padding and margin */
-  .preamble,
-  .explanation,
-  .participation,
-  .benefits,
-  .requirements {
-    padding: 10px;
-    margin-bottom: 15px;
-  }
-}
-
-
-
+    top: 40%;
+    right: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,11 +5,11 @@
 
 // Font Mixins
 @mixin dancingscript-font {
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", cursive !important;
 }
 
 @mixin robotocondensed-font {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 
 // General Styles
@@ -44,6 +44,7 @@ h1, .H1Tag {
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  @include dancingscript-font;
 }
 
 .h1Tag {
@@ -195,4 +196,6 @@ section {
     }
   }
 }
+
+// Media Queries
 

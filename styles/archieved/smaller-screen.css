@@ -5,6 +5,7 @@
 
   h1 {
     font-size: 2em;
+    font-family: "Dancing Script", cursive !important;
   }
 
   h2::after,

@@ -234,8 +234,9 @@ html {
   background-attachment: fixed;
   padding: 5%;
   background-color: transparent;
-  max-width: 1500px;
+  max-width: 1030px;
   margin: 0 auto;
+
 }
 
 body {
@@ -244,6 +245,7 @@ body {
   color: $colorWhite;
   background-color: $colorBodyBackground;
   padding: 5px;
+
 }
 
 //making some changes on the side bar
@@ -317,6 +319,8 @@ ul li {
 
 p {
   width: 80%;
+  margin: 0 auto;
+  line-height: 2em;
 }
 
 footer {
@@ -337,42 +341,105 @@ footer {
 }
 
 
+// @media only screen and (min-width: 1000px) and (max-width: 1051px) {
+
+//   h2:first-of-type {
+//     font-size: 30px;
+// }
+
+//   .sidebar {
+//     top: 62%;
+//   }
+
+// }
 
 
-
-@media only screen and (min-width: 1000px) and (max-width: 1051px) {
-
-  h2:first-of-type {
-    font-size: 30px;
-}
-
-  .sidebar {
-    top: 62%;
+/* For medium views (tablets, etc.) */
+@media screen and (max-width: 1024px) {
+  // Adjust body padding
+  body {
+    padding: 10px;
   }
 
+  // Adjust font sizes for headers
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.75em;
+  }
+
+  h2 {
+    font-size: 2.75em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  // Adjust padding and margin for sections
+  .preamble, .explanation, .participation, .benefits, .requirements {
+    margin-right: 0;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  // Adjust sidebar position
+  .sidebar {
+    position: static;
+    transform: none;
+    margin-top: 25px;
+    background-color: $colorSidebarBackground;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .design-selection, .design-archives, .zen-resources {
+    margin-bottom: 25px;
+  }
 }
 
-// Mobile view 
-@media only screen and (max-width: 769px) {
-  h2:first-of-type {
-    font-size: 20px;
-}
+/* For small views (small tablets, large phones) */
+@media screen and (max-width: 772px) {
+  // Adjust html padding
+  html {
+    padding: 2%;
+  }
 
-.summary::after {
-  display: none;
-}
+  // Adjust body font size
+  body {
+    font-size: 100%;
+    padding: 2px;
+  }
 
-.page-wrapper {
-  padding: 0;
+  // Adjust font sizes for headers
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
 
-}
+  h2 {
+    font-size: 2.5em;
+  }
 
-.preamble, .explanation, .participation, .benefits, .requirements {
-  max-width: 100%;
-  height: auto;
-  padding: 20px;
-  margin-bottom: 20px;
-}
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+  // Adjust padding and margin for sections
+  .preamble, .explanation, .participation, .benefits, .requirements {
+    margin-right: 0;
+    max-width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
 
 .sidebar {
   // position: relative;
@@ -539,3 +606,4 @@ footer {
 }
 
 
+}

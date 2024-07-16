@@ -1,15 +1,15 @@
 // Import Google Fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Satisfy&display=swap');
 
 
 // Font Mixins
-@mixin dancingscript-font {
-  font-family: "Dancing Script", cursive !important;
+@mixin satisfy-font {
+  font-family: "Satisfy", cursive, !important;
 }
 
-@mixin robotocondensed-font {
-  font-family: "Roboto Condensed", sans-serif !important;
+@mixin lato-font {
+  font-family: "Lato", sans-serif, !important;
 }
 
 // General Styles
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  @include robotocondensed-font;
+  @include lato-font;
   font-size: 85%;
   color: #000000;
   background-color: #4B8077;
@@ -33,7 +33,7 @@ body {
 
 // Heading Styles
 h2, h3, h4 {
-  @include dancingscript-font;
+  @include satisfy-font;
   margin: 0;
 }
 
@@ -44,7 +44,7 @@ h1, .H1Tag {
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
-  @include dancingscript-font;
+  @include satisfy-font;
 }
 
 .h1Tag {
@@ -85,7 +85,7 @@ h4 {
 
 // Paragraph Style
 p {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.5em;
   line-height: 1.5em;
   padding: 0.5em 0;
